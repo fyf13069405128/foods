@@ -1,0 +1,95 @@
+01:08:27.418 [Druid-ConnectionPool-Create-398291207] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.
+14:25:34.116 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Error][验证码错误]
+14:25:38.538 [schedule-pool-13] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+14:26:12.871 [schedule-pool-26] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+14:26:26.407 [schedule-pool-14] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]
+14:38:36.068 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]
+14:50:07.336 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,50] - Starting RuoYiApplication on LAPTOP-054BLB7L with PID 47440 (E:\food\Blockchain-APTrace-Fabric\blockchain-trace-basic-data\ruoyi-admin\target\classes started by 冯银发 in E:\food\Blockchain-APTrace-Fabric\blockchain-trace-basic-data)
+14:50:07.341 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+14:50:10.083 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+14:50:10.092 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:50:10.092 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+14:50:10.196 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:50:14.465 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,994] - {dataSource-1} inited
+14:50:14.859 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+14:50:14.862 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+14:50:17.799 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+14:50:17.810 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:50:17.810 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+14:50:17.810 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'RuoyiScheduler' with instanceId 'LAPTOP-054BLB7L1675666217799'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+14:50:17.810 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+14:50:17.810 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+14:50:17.810 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@1fbb9a0
+14:50:21.641 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+14:50:22.800 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+14:50:22.815 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+14:50:22.869 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+14:50:23.008 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+14:50:23.037 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,59] - Started RuoYiApplication in 16.182 seconds (JVM running for 17.742)
+14:50:24.482 [Quartz Scheduler [RuoyiScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler RuoyiScheduler_$_LAPTOP-054BLB7L1675666217799 started.
+14:51:13.404 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:37:43.369 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Logout][退出成功]
+15:37:56.806 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Success][登录成功]
+15:38:35.713 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Logout][退出成功]
+15:38:52.588 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]
+15:41:02.288 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Logout][退出成功]
+15:41:15.378 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Success][登录成功]
+15:50:23.873 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Logout][退出成功]
+15:50:39.536 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+15:50:39.914 [schedule-pool-5] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Error][验证码已失效]
+15:51:54.238 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[chenxianglong][Success][登录成功]
+15:57:11.069 [schedule-pool-6] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[chenxianglong][Logout][退出成功]
+15:57:28.231 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Success][登录成功]
+15:58:10.139 [schedule-pool-7] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Logout][退出成功]
+15:58:14.818 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+15:58:46.940 [schedule-pool-8] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+15:58:59.969 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Success][登录成功]
+16:05:00.695 [schedule-pool-9] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Logout][退出成功]
+16:05:15.337 [schedule-pool-5] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:11:51.760 [schedule-pool-14] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:11:56.676 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:14:37.475 [schedule-pool-8] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:16:17.984 [schedule-pool-16] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工D][Error][验证码已失效]
+16:16:22.223 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工D][Error][验证码错误]
+16:16:26.156 [schedule-pool-17] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工D][Success][登录成功]
+16:17:04.054 [schedule-pool-9] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工D][Logout][退出成功]
+16:17:10.201 [schedule-pool-18] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:19:43.510 [schedule-pool-20] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:19:56.412 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工A][Success][登录成功]
+16:22:03.444 [schedule-pool-21] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工A][Logout][退出成功]
+16:22:16.364 [schedule-pool-11] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工B][Success][登录成功]
+16:22:43.498 [schedule-pool-22] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工B][Logout][退出成功]
+16:22:54.914 [schedule-pool-6] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工C][Success][登录成功]
+16:23:30.551 [schedule-pool-23] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工C][Logout][退出成功]
+16:23:40.383 [schedule-pool-12] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工D][Success][登录成功]
+16:24:10.633 [schedule-pool-24] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工D][Logout][退出成功]
+16:24:21.383 [http-nio-8080-exec-5] INFO  c.r.f.w.s.UserDetailsServiceImpl - [loadUserByUsername,44] - 登录用户：员工E 已被删除.
+16:24:21.396 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工E][Error][对不起，您的账号：员工E 已被删除]
+16:24:25.878 [http-nio-8080-exec-4] INFO  c.r.f.w.s.UserDetailsServiceImpl - [loadUserByUsername,44] - 登录用户：员工E 已被删除.
+16:24:25.889 [schedule-pool-25] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工E][Error][对不起，您的账号：员工E 已被删除]
+16:24:40.496 [schedule-pool-13] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:26:27.618 [schedule-pool-27] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:26:30.694 [schedule-pool-14] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:27:30.804 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:27:47.875 [schedule-pool-29] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工E][Success][登录成功]
+16:28:29.239 [schedule-pool-15] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[员工E][Logout][退出成功]
+16:28:31.909 [schedule-pool-30] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:28:46.430 [schedule-pool-8] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+16:28:59.122 [schedule-pool-31] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Success][登录成功]
+16:38:19.405 [schedule-pool-16] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Logout][退出成功]
+16:38:27.694 [schedule-pool-32] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Success][登录成功]
+16:38:40.298 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Logout][退出成功]
+16:38:50.962 [schedule-pool-33] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Success][登录成功]
+16:39:13.955 [schedule-pool-17] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lihong][Logout][退出成功]
+16:39:26.776 [schedule-pool-34] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Success][登录成功]
+16:47:54.569 [schedule-pool-9] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Logout][退出成功]
+22:28:39.549 [schedule-pool-35] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+22:29:03.085 [schedule-pool-18] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+22:29:17.901 [schedule-pool-36] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Success][登录成功]

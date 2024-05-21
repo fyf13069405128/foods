@@ -1,0 +1,38 @@
+13:29:05.257 [lettuce-nioEventLoop-4-1] INFO  i.l.c.p.CommandHandler - [log,217] - null Unexpected exception during request: java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+java.io.IOException: 远程主机强迫关闭了一个现有的连接。
+	at sun.nio.ch.SocketDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:43)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:223)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:192)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:378)
+	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:253)
+	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1133)
+	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:350)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+13:29:05.467 [lettuce-eventExecutorLoop-1-3] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was /8.130.112.228:6379
+13:29:10.573 [lettuce-eventExecutorLoop-1-14] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.112.228:6379
+13:29:12.849 [Druid-ConnectionPool-Create-1505065259] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1791] - {dataSource-1} failContinuous is true
+13:29:23.066 [lettuce-eventExecutorLoop-1-16] INFO  i.l.c.p.ConnectionWatchdog - [log,171] - Reconnecting, last destination was 8.130.112.228:6379
+13:29:23.116 [lettuce-nioEventLoop-4-15] INFO  i.l.c.p.ReconnectionHandler - [lambda$null$3,177] - Reconnected to 8.130.112.228:6379
+13:29:25.066 [Druid-ConnectionPool-Create-1505065259] INFO  c.a.d.p.DruidAbstractDataSource - [setFailContinuous,1796] - {dataSource-1} failContinuous is false
+13:33:03.336 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+13:33:48.874 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+13:33:58.737 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Success][登录成功]
+13:34:38.683 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liuxiaowei][Logout][退出成功]
+13:34:43.500 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+13:35:12.167 [schedule-pool-5] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+13:35:26.408 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[hanjie][Success][登录成功]
+13:35:43.425 [schedule-pool-6] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[hanjie][Logout][退出成功]
+13:35:53.444 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[anming][Success][登录成功]
+13:36:33.329 [schedule-pool-7] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[anming][Logout][退出成功]
+13:36:36.264 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+13:45:02.710 [schedule-pool-8] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+13:45:12.677 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]

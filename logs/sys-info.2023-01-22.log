@@ -1,0 +1,4 @@
+01:40:11.899 [Druid-ConnectionPool-Create-1728495428] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.
+03:30:38.047 [Druid-ConnectionPool-Create-1728495428] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.
+05:06:01.287 [Druid-ConnectionPool-Create-1728495428] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.
+08:37:03.224 [Druid-ConnectionPool-Create-1728495428] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.

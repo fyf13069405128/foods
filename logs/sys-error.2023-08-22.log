@@ -1,0 +1,60 @@
+03:14:18.271 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692644925263_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1268 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692645245001,"WAITING"]
+03:19:17.211 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692644925263_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1311 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692645543899,"WAITING"]
+03:19:28.567 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692644925263_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1254 millis. UPDATE QRTZ_SCHEDULER_STATE SET LAST_CHECKIN_TIME = ? WHERE SCHED_NAME = 'RuoyiScheduler' AND INSTANCE_NAME = ?[1692645567312,"LAPTOP-054BLB7L1692644925263"]
+03:19:29.791 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692644925263_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1184 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692645556606,"WAITING"]
+17:40:49.210 [RuoyiScheduler_QuartzSchedulerThread] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1141 millis. SELECT TRIGGER_NAME, TRIGGER_GROUP, NEXT_FIRE_TIME, PRIORITY FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND TRIGGER_STATE = ? AND NEXT_FIRE_TIME <= ? AND (MISFIRE_INSTR = -1 OR (MISFIRE_INSTR != -1 AND NEXT_FIRE_TIME >= ?)) ORDER BY NEXT_FIRE_TIME ASC, PRIORITY DESC["WAITING",1692697278029,1692697236067]
+17:40:53.160 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1065 millis. SELECT * FROM QRTZ_SCHEDULER_STATE WHERE SCHED_NAME = 'RuoyiScheduler'[]
+17:45:56.128 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1338 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692697542788,"WAITING"]
+17:45:58.544 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1051 millis. SELECT * FROM QRTZ_SCHEDULER_STATE WHERE SCHED_NAME = 'RuoyiScheduler'[]
+17:46:00.690 [Druid-ConnectionPool-Create-2044172583] ERROR c.a.d.p.DruidDataSource - [put,2486] - create connection holder error
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,002 milliseconds ago. The last packet sent successfully to the server was 1,040 milliseconds ago.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1414)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1399)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_isReadOnly(FilterChainImpl.java:463)
+	at com.alibaba.druid.filter.FilterAdapter.connection_isReadOnly(FilterAdapter.java:894)
+	at com.alibaba.druid.filter.FilterChainImpl.connection_isReadOnly(FilterChainImpl.java:459)
+	at com.alibaba.druid.proxy.jdbc.ConnectionProxyImpl.isReadOnly(ConnectionProxyImpl.java:291)
+	at com.alibaba.druid.pool.DruidConnectionHolder.<init>(DruidConnectionHolder.java:140)
+	at com.alibaba.druid.pool.DruidConnectionHolder.<init>(DruidConnectionHolder.java:79)
+	at com.alibaba.druid.pool.DruidDataSource.put(DruidDataSource.java:2476)
+	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2821)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet successfully received from the server was 1,002 milliseconds ago. The last packet sent successfully to the server was 1,040 milliseconds ago.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.clearInputStream(NativeProtocol.java:807)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:622)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:128)
+	at com.mysql.cj.NativeSession.sendCommand(NativeSession.java:311)
+	at com.mysql.cj.NativeSession.queryServerVariable(NativeSession.java:1008)
+	at com.mysql.cj.jdbc.ConnectionImpl.isReadOnly(ConnectionImpl.java:1406)
+	... 9 common frames omitted
+Caused by: java.io.IOException: Socket is closed
+	at com.mysql.cj.protocol.AbstractSocketConnection.getMysqlInput(AbstractSocketConnection.java:72)
+	at com.mysql.cj.protocol.a.NativeProtocol.clearInputStream(NativeProtocol.java:803)
+	... 14 common frames omitted
+18:15:55.203 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1242 millis. UPDATE QRTZ_SCHEDULER_STATE SET LAST_CHECKIN_TIME = ? WHERE SCHED_NAME = 'RuoyiScheduler' AND INSTANCE_NAME = ?[1692699353960,"LAPTOP-054BLB7L1692696023304"]
+18:15:55.203 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1242 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692699341960,"WAITING"]
+18:15:57.992 [RuoyiScheduler_QuartzSchedulerThread] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1131 millis. SELECT TRIGGER_NAME, TRIGGER_GROUP, NEXT_FIRE_TIME, PRIORITY FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND TRIGGER_STATE = ? AND NEXT_FIRE_TIME <= ? AND (MISFIRE_INSTR = -1 OR (MISFIRE_INSTR != -1 AND NEXT_FIRE_TIME >= ?)) ORDER BY NEXT_FIRE_TIME ASC, PRIORITY DESC["WAITING",1692699386239,1692699344861]
+18:20:59.505 [RuoyiScheduler_QuartzSchedulerThread] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1278 millis. SELECT TRIGGER_NAME, TRIGGER_GROUP, NEXT_FIRE_TIME, PRIORITY FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND TRIGGER_STATE = ? AND NEXT_FIRE_TIME <= ? AND (MISFIRE_INSTR = -1 OR (MISFIRE_INSTR != -1 AND NEXT_FIRE_TIME >= ?)) ORDER BY NEXT_FIRE_TIME ASC, PRIORITY DESC["WAITING",1692699687506,1692699646226]
+18:21:07.616 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1064 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692699654551,"WAITING"]
+18:51:06.035 [RuoyiScheduler_QuartzSchedulerThread] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1261 millis. SELECT TRIGGER_NAME, TRIGGER_GROUP, NEXT_FIRE_TIME, PRIORITY FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND TRIGGER_STATE = ? AND NEXT_FIRE_TIME <= ? AND (MISFIRE_INSTR = -1 OR (MISFIRE_INSTR != -1 AND NEXT_FIRE_TIME >= ?)) ORDER BY NEXT_FIRE_TIME ASC, PRIORITY DESC["WAITING",1692701493969,1692701452773]
+18:51:07.382 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1271 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692701454111,"WAITING"]
+18:51:08.633 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1215 millis. SELECT * FROM QRTZ_SCHEDULER_STATE WHERE SCHED_NAME = 'RuoyiScheduler'[]
+18:56:12.681 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1206 millis. UPDATE QRTZ_SCHEDULER_STATE SET LAST_CHECKIN_TIME = ? WHERE SCHED_NAME = 'RuoyiScheduler' AND INSTANCE_NAME = ?[1692701771475,"LAPTOP-054BLB7L1692696023304"]
+19:26:13.271 [RuoyiScheduler_QuartzSchedulerThread] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1268 millis. SELECT TRIGGER_NAME, TRIGGER_GROUP, NEXT_FIRE_TIME, PRIORITY FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND TRIGGER_STATE = ? AND NEXT_FIRE_TIME <= ? AND (MISFIRE_INSTR = -1 OR (MISFIRE_INSTR != -1 AND NEXT_FIRE_TIME >= ?)) ORDER BY NEXT_FIRE_TIME ASC, PRIORITY DESC["WAITING",1692703601889,1692703560002]
+19:26:19.977 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_MisfireHandler] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1326 millis. SELECT COUNT(TRIGGER_NAME) FROM QRTZ_TRIGGERS WHERE SCHED_NAME = 'RuoyiScheduler' AND NOT (MISFIRE_INSTR = -1) AND NEXT_FIRE_TIME < ? AND TRIGGER_STATE = ?[1692703566650,"WAITING"]
+19:26:23.233 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1029 millis. SELECT * FROM QRTZ_SCHEDULER_STATE WHERE SCHED_NAME = 'RuoyiScheduler'[]
+19:30:10.959 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1240 millis. UPDATE QRTZ_SCHEDULER_STATE SET LAST_CHECKIN_TIME = ? WHERE SCHED_NAME = 'RuoyiScheduler' AND INSTANCE_NAME = ?[1692703809719,"LAPTOP-054BLB7L1692696023304"]
+20:08:25.116 [QuartzScheduler_RuoyiScheduler-LAPTOP-054BLB7L1692696023304_ClusterManager] ERROR c.a.d.f.s.StatFilter - [internalAfterStatementExecute,478] - slow sql 1021 millis. UPDATE QRTZ_SCHEDULER_STATE SET LAST_CHECKIN_TIME = ? WHERE SCHED_NAME = 'RuoyiScheduler' AND INSTANCE_NAME = ?[1692706104094,"LAPTOP-054BLB7L1692696023304"]

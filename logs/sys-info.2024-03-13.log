@@ -1,0 +1,4 @@
+00:23:57.224 [Druid-ConnectionPool-Create-839769235] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.
+12:39:12.636 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+16:07:35.510 [Druid-ConnectionPool-Create-839769235] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.
+20:03:27.053 [Druid-ConnectionPool-Create-839769235] INFO  c.a.d.p.DruidDataSource - [run,2824] - put physical connection to pool failed.

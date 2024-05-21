@@ -1,0 +1,46 @@
+22:55:59.975 [restartedMain] INFO  c.r.RuoYiApplication - [logStarting,50] - Starting RuoYiApplication on LAPTOP-054BLB7L with PID 95840 (E:\food\Blockchain-APTrace-Fabric\blockchain-trace-basic-data\ruoyi-admin\target\classes started by 冯银发 in E:\food\Blockchain-APTrace-Fabric\blockchain-trace-basic-data)
+22:55:59.975 [restartedMain] INFO  c.r.RuoYiApplication - [logStartupProfileInfo,652] - The following profiles are active: druid
+22:56:03.975 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-8080"]
+22:56:03.991 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+22:56:03.991 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.38]
+22:56:04.100 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+22:56:08.553 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,994] - {dataSource-1} inited
+22:56:08.850 [restartedMain] INFO  i.l.c.EpollProvider - [<clinit>,68] - Starting without optional epoll library
+22:56:08.850 [restartedMain] INFO  i.l.c.KqueueProvider - [<clinit>,70] - Starting without optional kqueue library
+22:56:12.037 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+22:56:12.067 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+22:56:12.068 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+22:56:12.080 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'RuoyiScheduler' with instanceId 'LAPTOP-054BLB7L1676472972039'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 20 threads.
+  Using job-store 'org.springframework.scheduling.quartz.LocalDataSourceJobStore' - which supports persistence. and is clustered.
+
+22:56:12.080 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'RuoyiScheduler' initialized from an externally provided properties instance.
+22:56:12.082 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+22:56:12.084 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.AdaptableJobFactory@62f8f558
+22:56:15.762 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - [initHandlerMethods,69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+22:56:16.890 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,160] - Context refreshed
+22:56:16.905 [restartedMain] INFO  s.d.s.w.p.DocumentationPluginsBootstrapper - [start,163] - Found 1 custom documentation plugin(s)
+22:56:16.952 [restartedMain] INFO  s.d.s.w.s.ApiListingReferenceScanner - [scan,41] - Scanning for api listing references
+22:56:17.093 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-8080"]
+22:56:17.124 [restartedMain] INFO  c.r.RuoYiApplication - [logStarted,59] - Started RuoYiApplication in 17.774 seconds (JVM running for 19.587)
+22:56:18.558 [Quartz Scheduler [RuoyiScheduler]] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler RuoyiScheduler_$_LAPTOP-054BLB7L1676472972039 started.
+22:56:50.970 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+22:57:50.231 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Success][登录成功]
+22:57:57.168 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[admin][Logout][退出成功]
+23:05:29.982 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]
+23:06:15.679 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Logout][退出成功]
+23:06:58.614 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Success][登录成功]
+23:07:37.370 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Logout][退出成功]
+23:11:16.528 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Error][验证码错误]
+23:12:29.453 [schedule-pool-1] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]
+23:12:57.605 [schedule-pool-5] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Logout][退出成功]
+23:13:15.844 [schedule-pool-3] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Success][登录成功]
+23:13:48.585 [schedule-pool-6] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Logout][退出成功]
+23:14:58.813 [schedule-pool-2] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Success][登录成功]
+23:15:44.203 [schedule-pool-7] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[lijie][Logout][退出成功]
+23:15:57.158 [schedule-pool-4] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Success][登录成功]
+23:28:30.471 [schedule-pool-8] INFO  sys-user - [run,54] - [127.0.0.1]内网IP[liqing][Logout][退出成功]
