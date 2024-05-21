@@ -1,0 +1,164 @@
+<template name="40c4a6bd">
+  <view class="_div data-v-40892313">
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0" class="_i-divider data-v-40892313">零售商</i-divider>
+    <i-input value="{{productData.product_id}}" title="产品ID" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.product_name}}" title="产品名称" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.retailer}}" title="零售点" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.retailer_name}}" title="零售店负责人" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.retailer_tel}}" title="零售店负责人电话" disabled class="_i-input data-v-40892313"></i-input>
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0" class="_i-divider data-v-40892313">产品基本信息</i-divider>
+    <i-input value="{{productData.factory}}" title="生产厂商" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.leader}}" title="生产厂商负责人" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.leader_tel}}" title="生产厂商负责人电话" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.Net_Content}}" title="净含量" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.workshop}}" title="生产车间" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.work_hours}}" title="生产工时" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.keep_mathod}}" title="保存方法" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.cooking_recommend}}" title="食用推荐" disabled class="_i-input data-v-40892313"></i-input>
+    <i-input value="{{productData.remarks}}" title="备注" disabled class="_i-input data-v-40892313"></i-input>
+    <i-divider color="#2d8cf0" lineColor="#2d8cf0" class="_i-divider data-v-40892313">溯源更多信息</i-divider>
+    <i-row class="_i-row data-v-40892313">
+      <i-col span="5" i-class="col-class" class="_i-col data-v-40892313">
+        <i-tab-bar-item color="#f759ab" bindtap="handleProxy" icon="homepage" current-icon="activity_fill" title="种植过程" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_i-tab-bar-item data-v-40892313"></i-tab-bar-item>
+      </i-col>
+      <i-col span="5" i-class="col-class" class="_i-col data-v-40892313">
+        <i-tab-bar-item color="#2d8cf0" bindtap="handleProxy" icon="coordinates_fill" current-icon="coordinates_fill" title="流通行为" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_i-tab-bar-item data-v-40892313"></i-tab-bar-item>
+      </i-col>
+      <i-col span="5" i-class="col-class" class="_i-col data-v-40892313">
+        <i-tab-bar-item color="#19be6b" bindtap="handleProxy" icon="task_fill" current-icon="task_fill" title="厂商质检" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_i-tab-bar-item data-v-40892313"></i-tab-bar-item>
+      </i-col>
+      <i-col span="5" i-class="col-class" class="_i-col data-v-40892313">
+        <i-tab-bar-item color="#ff9900" bindtap="handleProxy" icon="createtask_fill" current-icon="create_fill" title="生产行为" data-eventid="{{'3'}}" data-comkey="{{$k}}" class="_i-tab-bar-item data-v-40892313"></i-tab-bar-item>
+      </i-col>
+      <i-col span="4" i-class="col-class" class="_i-col data-v-40892313">
+        <i-tab-bar-item color="#80848f" bindtap="handleProxy" icon="shop_fill" current-icon="shop_fill" title="农产信息" data-eventid="{{'4'}}" data-comkey="{{$k}}" class="_i-tab-bar-item data-v-40892313"></i-tab-bar-item>
+      </i-col>
+    </i-row>
+    <view hidden="{{!(showPlant)}}" style="padding-top: 1.25rem;" wx:key="index" key="{{index}}" wx:for="{{cropsProcessDetailsArray}}" wx:for-index="index" wx:for-item="detail" class="_div data-v-40892313">
+      <i-card title="{{detail.crops_grow_id}}" thumb="{{detail.crops_grow_photo_url}}" class="_i-card data-v-40892313">
+        <l-album urls="{{photo}}" class="_l-album data-v-40892313"></l-album>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.grow_status}}" title="生长情况" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.illumination_status}}" title="光照情况" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.water_content}}" title="水分" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.temperature}}" title="温度" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.record_time}}" title="记录时间" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.remarks}}" title="备注" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+      </i-card>
+    </view>
+    <view class="_br data-v-40892313"></view>
+    <view hidden="{{!(showDriver)}}" style="padding-top: 1.25rem;" class="_div data-v-40892313">
+      <i-steps current="{{len}}" direction="vertical" class="_i-steps data-v-40892313">
+        <i-step wx:key="index" key="{{index}}" wx:for="{{cropsDriverArray}}" wx:for-index="index" wx:for-item="detail" class="_i-step data-v-40892313">
+          <view slot="content" class="_view data-v-40892313">物流ID:{{detail.transport_id}}</view>
+          <view slot="content" class="_view data-v-40892313">经过地:{{detail.transport_to_address}}</view>
+          <view slot="content" class="_view data-v-40892313">时间:{{detail.transport_to_chain_time}}</view>
+          <view slot="content" class="_view data-v-40892313">司机:{{detail.driver_name}}</view>
+          <view slot="content" class="_view data-v-40892313">电话:{{detail.driver_tel}}</view>
+          <view slot="content" class="_view data-v-40892313">备注:{{detail.remarks}}</view>
+        </i-step>
+      </i-steps>
+    </view>
+    <view hidden="{{!(showMaching)}}" style="padding-top: 1.25rem;" class="_div data-v-40892313">
+      <i-card title="{{machingInfo.machining_id}}" thumb="{{machingInfo.testing_photo_url}}" class="_i-card data-v-40892313">
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.leader}}" title="负责人" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.leader_tel}}" title="电话" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.factory_name}}" title="原料厂商" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.in_factory_time}}" title="入厂时间" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.out_factory_time}}" title="出厂时间" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.testing_result}}" title="检测结果" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{machingInfo.remarks}}" title="备注" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+      </i-card>
+    </view>
+    <view hidden="{{!(showProcess)}}" style="padding-top: 1.25rem;" wx:key="index" key="{{index}}" wx:for="{{operationArray}}" wx:for-index="index" wx:for-item="detail" class="_div data-v-40892313">
+      <i-card title="{{detail.operation_id}}" class="_i-card data-v-40892313">
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.operation_people_name}}" title="员工" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.operation_people_tel}}" title="电话" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.work_content}}" title="操作内容" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.time}}" title="时间" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{detail.remarks}}" title="备注" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+      </i-card>
+    </view>
+    <view hidden="{{!(showCropsInfo)}}" style="padding-top: 1.25rem;" class="_div data-v-40892313">
+      <i-card title="{{cropsDetails.crops_id}}" class="_i-card data-v-40892313">
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.crops_name}}" title="农产名字" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.farmer_name}}" title="种植户" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.farmer_tel}}" title="电话" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.address}}" title="地址" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.plant_mode}}" title="种植方式" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.year}}" title="年度" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.bagging_status}}" title="套袋方式" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.fertilizer_name}}" title="使用肥料" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.grow_seedlings_cycle}}" title="育苗周期" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.irrigation_cycle}}" title="灌溉周期" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.weed_cycle}}" title="除草周期" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.apply_fertilizer_cycle}}" title="施肥周期" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.register_time}}" title="注册时间" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+        <view slot="footer" class="_view data-v-40892313">
+          <i-input value="{{cropsDetails.remarks}}" title="备注" disabled class="_i-input data-v-40892313"></i-input>
+        </view>
+      </i-card>
+    </view>
+  </view>
+</template>

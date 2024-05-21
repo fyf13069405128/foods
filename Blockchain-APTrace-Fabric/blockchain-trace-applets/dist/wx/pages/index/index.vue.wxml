@@ -1,0 +1,28 @@
+<template name="1072fa40">
+  <view style="padding-top: 50px;" class="_div data-v-6893c514">
+    <l-card type="primary" l-img-class="right-card" position="left" image="https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=154562898,2539807908&fm=15&gp=0.jpg" class="_l-card data-v-6893c514">
+      <view class="_view data-v-6893c514 content">基于区块链的农产品溯源平台，凭借着区块链的不可篡改，去中心化，可追溯特性，让每件农产品从农田到餐桌整个过程透明化</view>
+    </l-card>
+    <view style="padding-top: 10px;" class="_div data-v-6893c514">
+      <l-card type="primary" l-img-class="right-card" position="right" image="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2720209114,2971830483&fm=26&gp=0.jpg" class="_l-card data-v-6893c514">
+        <view class="_view data-v-6893c514 content"> 区块高度: <i-tag class="_i-tag data-v-6893c514 i-tags" name="区块高度" color="blue">{{ blockNumber }}</i-tag>
+        </view>
+        <view class="_br data-v-6893c514"></view>
+        <view class="_view data-v-6893c514 content"> 参与方: <i-tag class="_i-tag data-v-6893c514 i-tags" name="区块高度" color="green">种植户</i-tag>    <i-tag class="_i-tag data-v-6893c514 i-tags" name="区块高度" color="blue">原料厂商</i-tag>    <i-tag class="_i-tag data-v-6893c514 i-tags" name="区块高度" color="red">生产厂商</i-tag>    <i-tag class="_i-tag data-v-6893c514 i-tags" name="区块高度" color="yellow">零售商</i-tag>    <i-tag class="_i-tag data-v-6893c514 i-tags" name="区块高度" color="default">物流公司</i-tag>
+        </view>
+        <view class="_br data-v-6893c514"></view>
+        <view class="_view data-v-6893c514 content"> 技术： <i-tag class="_i-tag data-v-6893c514 i-tags" color="default">Node.js</i-tag>   <i-tag class="_i-tag data-v-6893c514 i-tags" color="blue">Vue</i-tag>   <i-tag class="_i-tag data-v-6893c514 i-tags" color="red">Hyperledger Fabric</i-tag>   <i-tag class="_i-tag data-v-6893c514 i-tags" color="green">Express</i-tag>
+        </view>
+      </l-card>
+    </view>
+    <view style="padding-top:15px;padding-bottom: 15px;" class="_div data-v-6893c514">
+      <l-notice-bar show="{{true}}" type="roll" speed="10000" class="_l-notice-bar data-v-6893c514"> 最新区块:{{blockInfo.data.header.data_hash }}
+      </l-notice-bar>
+    </view>
+    <view style="padding-bottom: 15px;" class="_div data-v-6893c514">
+      <view class="_div data-v-6893c514">
+        <l-search-bar shape="circle" bindlinconfirm="handleProxy" bindlinchange="handleProxy" placeholder="溯源ID" show-cancel="{{false}}" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_l-search-bar data-v-6893c514"></l-search-bar>
+      </view>
+    </view>
+  </view>
+</template>
